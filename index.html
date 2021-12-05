@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="app.js" async></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Memory Card</title>
+    <div class="game-info-container"></div>
+  </head>
+  <body>
+    <h1 class="page-title">Memory Card</h1>
+    <div class="game-info">Name <span id="name">null</span></div>
+    <div class="game-info">Match <span id="match">0</span></div>
+    <div class="game-info">Wins <span id="wins">0</span></div>
+
+    <div class="overlay-text visible">
+      <form>
+        <input type="radio" id="size4" name="sizeGrid" value="4" />
+        <label for="4">4X4</label><br />
+        <input type="radio" id="size5" name="sizeGrid" value="5" />
+        <label for="5">5X5</label><br />
+      </form>
+    </div>
+    <div id="game-over-text" class="overlay-text">
+      GAME OVER
+      <span class="overlay-text-small">Click to Continue</span>
+    </div>
+    <div id="win-text" class="overlay-text">
+      WINNER
+      <span class="overlay-text-small">Click to Continue</span>
+    </div>
+    <div id="gc"></div>
+  </body>
+</html>
