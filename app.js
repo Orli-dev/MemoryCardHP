@@ -64,7 +64,7 @@ const getCards5 = () => [
 // };
 const cardGen = () => {
   //gameContainer.classList = "game-container4";
-  const cardData = getCards4();
+  const cardData = getCards5();
   cardData.forEach((item) => {
     const card = document.createElement("div");
     const back = document.createElement("div");
